@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/lib/Themecontex";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppin = Poppins({ subsets: ["latin"] , weight : ['100','200','400','500','700','900']});
 
 export const metadata: Metadata = {
   title: "kaymmari",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppin.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

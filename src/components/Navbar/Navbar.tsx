@@ -6,6 +6,7 @@ import { FaList } from 'react-icons/fa6'
 import { ModeToggle } from '../ui/ThemeSwitcher'
 
 
+
 const Navbar = () => {
     const [isNavopen, setNavOpen] = useState(false)
 
@@ -18,10 +19,9 @@ const Navbar = () => {
             <Link href={"/"} className='text-2xl'>kay</Link>
             <ModeToggle />
             <nav className='hidden sm:flex gap-4 items-center text-xs'>
-                <Link className='hover:text-green-500' href={"/"}>About</Link>
-                <Link className='hover:text-green-500' href={"/"}>Service</Link>
-                <Link className='hover:text-green-500' href={"/"}>Portfolio</Link>
-                <Link className='hover:text-green-500' href={"/"}>Contact</Link>
+                <Link className='hover:text-green-500' href={'#service'}>Service</Link>
+                <Link className='hover:text-green-500' href={"#portfolio"}>Portfolio</Link>
+                <Link className='hover:text-green-500' href={"#contacts"}>Contacts</Link>
             </nav>
             <button onClick={handleNavbar} className='blog sm:hidden'>
                 <FaList className='text-2xl'/>
@@ -35,7 +35,6 @@ const Navbar = () => {
                         <FaTimes className='text-3xl' />
                     </button>
                     <nav className='flex flex-col justify-center gap-4 text-2xl items-center'>
-                        <Link onClick={handleNavbar} href={"/"}>About</Link>
                         <Link onClick={handleNavbar} href={"/"}>Service</Link>
                         <Link onClick={handleNavbar} href={"/"}>Portfolio</Link>
                         <Link onClick={handleNavbar} href={"/"}>Contact</Link>
