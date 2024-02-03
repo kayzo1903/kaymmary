@@ -19,7 +19,7 @@ const Herosection = () => {
                     <h6 className='text-xl sm:text-2xl leading-relaxed text-gray-600 dark:text-gray-300'>Experienced Full-stack web developer</h6>
                     <p className='text-xs text-gray-400'>Transforming ideas into interactive digital solutions.</p>
                 </div>
-                <Link href={'#contacts'} className='text-center px-4 mx-auto py-2 text-gray-900 text-sm bg-green-300 border-2 border-green-300 hover:bg-transparent w-60 rounded-2xl capitalize'>
+                <Link href={'#contacts'} className='text-center px-4 mx-auto py-2 text-gray-900 hover:dark:text-gray-100 text-sm bg-green-300 border-2 border-green-300 hover:bg-transparent w-60 rounded-2xl capitalize'>
                     hire me
                 </Link>
             </div>

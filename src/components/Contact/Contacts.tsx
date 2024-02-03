@@ -10,7 +10,7 @@ const Contacts = () => {
                     <input type='email' className='text-sm py-1 px-2 placeholder:dark:text-white placeholder:text-gray-950 focus:outline-none border-b-[1px] border-gray-900 dark:border-gray-100 bg-transparent placeholder:text-xs text-gray-900 dark:text-gray-50' name='useremail' id='useremail' placeholder='Your@email.com' />
                     <textarea className='text-sm py-1 px-2 placeholder:dark:text-white placeholder:text-gray-950 focus:outline-none border-b-[1px] border-gray-900 dark:border-gray-100 bg-transparent placeholder:text-xs text-gray-900 dark:text-gray-50' name="usermessage" id="usermessage" cols={10} rows={3} placeholder='message'></textarea>
                 </form>
-                <button className='text-center px-4 mx-auto py-2 text-gray-900 text-sm bg-green-300 border-2 border-green-300 hover:bg-transparent w-full rounded-2xl capitalize'>
+                <button className='text-center px-4 mx-auto py-2 text-gray-900 hover:dark:text-gray-100 text-sm bg-green-300 border-2 border-green-300 hover:bg-transparent w-full rounded-2xl capitalize'>
                     send message
                 </button>
             </div>
