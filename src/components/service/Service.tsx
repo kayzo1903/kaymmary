@@ -7,24 +7,24 @@ import Image from 'next/image'
 const Service = () => {
     return (
         <section className='w-full h-fit px-4 pb-8' id='service'>
-            <h6 className='text-gray-600 w-full text-center capitalize'>service</h6>
+            <h6 className='text-gray-600 w-full text-center capitalize my-8'>service</h6>
             <div className='w-full flex flex-wrap items-center gap-4 justify-center'>
                 <div className='space-y-4 max-w-sm'>
-                    <div className='flex gap-2 items-center w-52'>
+                    <div className='flex gap-2 items-center w-56 bg-green-100 dark:bg-gray-900 py-1 px-2'>
                         <div className='w-28 h-16 overflow-hidden relative'>
                             <Image alt='figma' src={figma} fill={true} priority
                                 style={{ objectFit: 'cover' }} />
                         </div>
                             <p className='text-xs text-gray-400'>Design cool applications by figma</p>
                     </div>
-                    <div className='flex gap-2 items-center w-52'>
+                    <div className='flex gap-2 items-center w-56 bg-green-100 dark:bg-gray-900  py-1 px-2'>
                         <div className='w-28 h-16 relative overflow-hidden'>
                             <Image alt='figma' src={reactjs} fill={true} priority
                                 style={{ objectFit: 'cover' }} />
                         </div>
                             <p className='text-xs text-gray-400'>Design cool front-end by latest technology</p>
                     </div>
-                    <div className='flex gap-2 items-center w-52'>
+                    <div className='flex gap-2 items-center w-56 bg-green-100 dark:bg-gray-900 py-1 px-2'>
                         <div className='w-28 h-16 relative overflow-hidden'>
                             <Image alt='figma' src={nodejs} fill={true} priority
                                 style={{ objectFit: 'cover' }} />
@@ -34,8 +34,9 @@ const Service = () => {
                 </div>
                 <div className='space-y-2 max-w-md'>
                     <h3 className='text-xl'>My Awesome service</h3>
-                    <p className='text-gray-600 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> 
-                    Vero enim, nam id maiores consequuntur minus atque </p>
+                    <p className='text-gray-600 text-sm'>Experienced Full-Stack Developer<br />
+                        Passionate about crafting seamless web experiences.<br/>
+                        JavaScript | TypeScript | React | Express | MongoDB</p>
                     <div className='flex flex-nowrap gap-4'>
                         <div>
                            <h3>15+</h3>

@@ -35,9 +35,9 @@ const Navbar = () => {
                         <FaTimes className='text-3xl' />
                     </button>
                     <nav className='flex flex-col justify-center gap-4 text-2xl items-center'>
-                        <Link onClick={handleNavbar} href={"/"}>Service</Link>
-                        <Link onClick={handleNavbar} href={"/"}>Portfolio</Link>
-                        <Link onClick={handleNavbar} href={"/"}>Contact</Link>
+                        <Link onClick={handleNavbar} href={'#service'}>Service</Link>
+                        <Link onClick={handleNavbar} href={"#portfolio"}>Portfolio</Link>
+                        <Link onClick={handleNavbar} href={"#contacts"}>Contact</Link>
                     </nav>
                 </div>
             </div>
