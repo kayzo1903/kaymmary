@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
   return (
     <section className='w-full h-fit px-4 py-8 space-y-4'>
       <h6 className='text-gray-600 w-full text-center capitalize'>Portfolio</h6>
-      <h3 className='capitalize text-xl leading-relaxed'>let's have a look at <br /> my portfolio</h3>
+      <h3 className='capitalize text-xl leading-relaxed'>lets have a look at <br /> my portfolio</h3>
       <div className='flex gap-4 justify-center items-center flex-wrap '>
         {displayedProjects.map((item) => (
           <Portfoliocard project={item} key={item.id} />
