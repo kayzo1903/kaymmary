@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import kay from '../../../public/kay.jpg'
+import kay from '../../../public/kayImage/kay.jpg'
 import Link from 'next/link'
 
 const Herosection = () => {
