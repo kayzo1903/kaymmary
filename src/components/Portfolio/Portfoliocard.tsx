@@ -11,8 +11,8 @@ const Portfoliocard: React.FC<portfoliocardprops> = ({ project }) => {
 
     return (
         <a href={path} target='_blank'
-            className='space-y-2 bg-green-100 shadow-md dark:bg-gray-900 w-fit rounded-md overflow-hidden'>
-            <div className='w-72 h-44 overflow-hidden relative'>
+            className='space-y-2 bg-green-100 shadow-md dark:bg-gray-900 w-96 sm:w-80  rounded-md overflow-hidden'>
+            <div className='w-96 sm:w-80 h-44 overflow-hidden relative'>
                 <Image
                     alt={name}
                     src={image}

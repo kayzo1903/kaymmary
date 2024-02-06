@@ -65,6 +65,6 @@
     --ring: 216 12.2% 83.9%;
   }
   *{
-    @apply transition-all duration-500 scroll-smooth
+    @apply transition-all duration-500 scroll-smooth scroll-m-1
   }
 }

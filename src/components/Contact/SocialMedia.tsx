@@ -7,7 +7,7 @@ import Socialmediacard from './Socialmediacard'
 
 const SocialMedia = () => {
     return (
-        <div className='space-y-4 w-80'>
+        <div className='space-y-4 w-96'>
             <Socialmediacard
                 image={facebook}
                 link='https://www.facebook.com/profile.php?id=100092691587509'
