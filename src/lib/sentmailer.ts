@@ -6,10 +6,7 @@ type messageProps = {
 }
 
 export async function sentMailer({ subject , html } : messageProps) {
-
-  console.log(process.env.NEXT_PUBLIC_EMAIL_ADDRESS, process.env.NEXT_PUBLIC_PASSWORD);
   
-
   let transporter = nodemailer.createTransport({
        service : "gmail" ,
        auth : {
