@@ -16,16 +16,34 @@ const Contactsform = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         const { name, email, message } = clientInfo
-        
-        
+        setLoading(true)
         try {
-            await fetch('/api/nodemailer  ',{
+             const resp =  await fetch('/api/nodemailer',{
                 method : 'POST' ,
                 body : JSON.stringify({name , email , message}),
                 headers :{
                     "Content-Type" : "application/json" ,
                 }
             })
+            if (resp.status === 200) {
+                setLoading(false)
+                setrespMsg(true)
+                setSuccessfull(true)
+                setTimeout(() => {
+                    setrespMsg(false)
+                    setSuccessfull(false)
+                    setClientInfo({ name: "", email: "", message: "" })
+                }, 3000);
+            }
+            else {
+                setLoading(false)
+                setrespMsg(true)
+                setSuccessfull(false)
+                setTimeout(() => {
+                    setrespMsg(false)
+                    setClientInfo({ name: "", email: "", message: "" })
+                }, 3000);
+            }
            
         } catch (error) {
              console.log(error);          
@@ -42,7 +60,7 @@ const Contactsform = () => {
                     </div> :
                     <div className='w-96 space-y-4 relative'>
                         {respMsg && <Successfullmsg message={success} name={clientInfo.name} />}
-                        <form className='w-full flex flex-col gap-2 px-2 py-2' onSubmit={handleSubmit}>
+                        <form className={`${respMsg ? "hidden" : "flex"} w-full  flex-col gap-2 px-2 py-2`} onSubmit={handleSubmit}>
                             <input
                                 required
                                 onChange={handleChange}

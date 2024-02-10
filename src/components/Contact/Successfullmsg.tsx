@@ -7,7 +7,7 @@ interface messageProp {
     name : string
 }
 
-const Successfullmsg: React.FC<messageProp> = ({ message , name}) => {
+const Successfullmsg = ({ message , name} : messageProp) => {
     return (
         <div className='w-96 flex justify-center items-center h-64 flex-col bg-green-100 dark:bg-gray-900 gap-4'>
             <div className='space-y-4'>
