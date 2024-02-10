@@ -1,5 +1,4 @@
 import { sentMailer } from "@/lib/sentmailer";
-import { NextApiRequest, NextApiResponse } from "next";
 
 type Fields = {
   name: string;
@@ -13,7 +12,7 @@ export const POST = async (req:Request ) =>{
     try {
       await sentMailer({
         subject : `message from ${name}`,
-        html : `<p> Email : ${email} <br />${message.replace(/(?:\r\n|\r|\n)/g, '<br>')}</p>`
+        html : `<p> Email : ${email} <br /> Message : ${message.replace(/(?:\r\n|\r|\n)/g, '<br>')}</p>`
       })
       return Response.json({ message : "message sent" } , {status : 200})
     } catch (error) {
